@@ -1,0 +1,90 @@
+.nav {
+  background-color: #fafafa;
+  cursor: pointer;
+  display: block;
+  padding-right: 1em;
+}
+
+.nav:hover+.body {
+  display: block;
+  opacity: 0.2;
+  background: rgba(0, 0, 0, 1);
+  transition: opacity .15s linear;
+}
+
+.words:hover {
+  /* text-decoration: underline red; */
+  border-bottom: 3px solid #D21F30;
+}
+
+.body {
+  position: fixed;
+  /* display: transparent; */
+  /* overflow: hidden; */
+  /* outline: 0; */
+  /* equal to the navbar height */
+  top: 75px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+}
+
+.words {
+  text-transform: uppercase;
+  visibility: visible;
+  padding-top: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  padding-bottom: 20px;
+}
+
+#logo {
+  width: 35px;
+}
+
+.departments {
+  padding: 20px;
+}
+
+.dep {
+  padding-left: 25px;
+}
+
+.border {
+  border-left: 1px solid lightgray;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.signin {
+  padding-left: 350px;
+  padding-top: 10px;
+}
+
+.word {
+  text-transform: uppercase;
+  visibility: visible;
+  padding-top: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 20px;
+}
+
+.search-bar {
+  width: 130px;
+  height: 30px;
+  font-size: 14px;
+  text-align: center;
+}
