@@ -6,30 +6,27 @@
 }
 
 .nav:hover+.body {
+  position: relative;
   display: block;
   opacity: 0.2;
-  background: rgba(0, 0, 0, 1);
-  transition: opacity .15s linear;
+  background: rgba(0, 0, 0, 0.1);
+  transition: opacity 0.1s linear;
 }
 
 .underline:hover {
-  /* text-decoration: underline red; */
   border-bottom: 3px solid #D21F30;
 }
 
 .body {
   position: fixed;
-  /* display: transparent; */
-  /* overflow: hidden; */
-  /* outline: 0; */
-  /* equal to the navbar height */
-  top: 75px;
-  bottom: 0;
+  top: 70px;
+  bottom: 0px;
   left: 0;
-  right: 0;
+  right: 100px;
   background: white;
 }
 
+/* Styling for the different types departments on the nav bar */
 .words {
   text-transform: uppercase;
   visibility: visible;
@@ -41,7 +38,7 @@
   padding: 20px;
 }
 
-.container {
+.nav-container {
   display: flex;
   align-items: center;
   padding: 12px;
@@ -49,11 +46,12 @@
 }
 
 #logo {
+  height: 35px;
   width: 35px;
 }
 
 .departments {
-  padding: 20px;
+  padding: 15px;
 }
 
 .dep {
@@ -66,9 +64,6 @@
   padding-right: 10px;
 }
 
-.signin {
-  padding-left: 350px;
-}
 
 .word {
   text-transform: uppercase;
@@ -79,6 +74,11 @@
   font-weight: bold;
   letter-spacing: 2px;
   padding: 20px;
+}
+
+/* Styling for the sign in and search aspect */
+.signin {
+  padding-left: 350px;
 }
 
 .search-bar {
@@ -102,4 +102,44 @@ img {
   width: 23px;
   height: 22px;
   cursor: pointer;
+}
+
+/* styling for the activities */
+.activity {
+  background-color: white;
+  height: 70px;
+  padding-top: 10px;
+}
+
+.activity-title {
+  text-transform: uppercase;
+  visibility: visible;
+  padding-top: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding-left: 90px;
+  padding-right: 120px;
+}
+
+.activity-border {
+  border-left: 1px solid lightgray;
+  padding: 20px;
+  height: 20px;
+}
+
+.activity-types {
+  visibility: visible;
+  padding-top: 15px;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 545;
+  font-weight: bold;
+  padding: 50px;
+  padding-left: 40px;
+}
+
+.act-under:hover {
+  border-bottom: 3px solid #D21F30;
 }

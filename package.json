@@ -10,7 +10,8 @@
   },
   "scripts": {
     "build": "webpack -w -d",
-    "start": "nodemon server/index.js"
+    "start": "nodemon server/index.js",
+    "seed": "node database/seed.js"
   },
   "dependencies": {
     "axios": "^0.19.0",

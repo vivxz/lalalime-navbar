@@ -9,7 +9,7 @@ class Department extends React.Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="nav-container">
         <img id="logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/2/22/Lululemon_Athletica_logo.svg/1200px-Lululemon_Athletica_logo.svg.png" />
         <div className="dep">
           <div className="departments">

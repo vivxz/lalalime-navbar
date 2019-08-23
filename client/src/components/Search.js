@@ -1,5 +1,6 @@
 import React from 'react';
-import Department from './Department.js'
+import Department from './Department.js';
+import Activities from './Activities.js';
 
 class Search extends React.Component {
 	constructor(props) {
@@ -12,6 +13,7 @@ class Search extends React.Component {
 		return (
 			<div className="nav">
 				<Department />
+				<Activities />
 			</div>
 		)
 	}
