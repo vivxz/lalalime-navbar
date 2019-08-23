@@ -12,7 +12,7 @@
   transition: opacity .15s linear;
 }
 
-.words:hover {
+.underline:hover {
   /* text-decoration: underline red; */
   border-bottom: 3px solid #D21F30;
 }
@@ -68,7 +68,6 @@
 
 .signin {
   padding-left: 350px;
-  padding-top: 10px;
 }
 
 .word {
@@ -83,10 +82,9 @@
 }
 
 .search-bar {
-  width: 100px;
-  height: 30px;
-  font-size: 14px;
-  /* text-align: center; */
+  width: 107px;
+  height: 35px;
+  font-size: 13px;
   padding-left: 24px;
 }
 

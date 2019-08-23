@@ -12,13 +12,13 @@ class Department extends React.Component {
       <div className="container">
         <img id="logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/2/22/Lululemon_Athletica_logo.svg/1200px-Lululemon_Athletica_logo.svg.png" />
         <div className="dep">
-          <span className="departments">
-            <span className="words">women</span>
-            <span className="words">men</span>
-            <span className="words">girls</span>
-            <span className="words">community</span>
-            <span className="words">selfcare</span>
-          </span>
+          <div className="departments">
+            <span className="words"><span className="underline">women</span></span>
+            <span className="words"><span className="underline">men</span></span>
+            <span className="words"><span className="underline">girls</span></span>
+            <span className="words"><span className="underline">community</span></span>
+            <span className="words"><span className="underline">selfcare</span></span>
+          </div>
         </div>
         <div className="signin">
           <span>
