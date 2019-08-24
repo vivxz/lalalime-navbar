@@ -1,20 +1,44 @@
+/* latin */
+@font-face {
+  font-family: 'Calibri';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Calibri Italic'), local('Calibri-Italic'), url(https://fonts.gstatic.com/l/font?kit=J7adnpV-BGlaFfdAhLQo6btPMDoTpA&skey=36a3d5758e0e2f58&v=v10) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Calibri';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Calibri Bold Italic'), local('Calibri-BoldItalic'), url(https://fonts.gstatic.com/l/font?kit=J7aYnpV-BGlaFfdAhLQgUp5aHRgejiMIKQ&skey=8b00183e5f6700b6&v=v10) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Calibri';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Calibri'), url(https://fonts.gstatic.com/l/font?kit=J7afnpV-BGlaFfdAhLEY67FIEjg&skey=a1029226f80653a8&v=v10) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Calibri';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Calibri Bold'), local('Calibri-Bold'), url(https://fonts.gstatic.com/l/font?kit=J7aanpV-BGlaFfdAjAo9_pxqHxIZrCE&skey=cd2dd6afe6bf0eb2&v=v10) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 .nav {
   background-color: #fafafa;
   cursor: pointer;
   display: block;
   padding-right: 1em;
-}
-
-.nav:hover+.body {
-  position: relative;
-  display: block;
-  opacity: 0.2;
-  background: rgba(0, 0, 0, 0.1);
-  transition: opacity 0.1s linear;
-}
-
-.underline:hover {
-  border-bottom: 3px solid #D21F30;
 }
 
 .body {
@@ -23,19 +47,35 @@
   bottom: 0px;
   left: 0;
   right: 100px;
-  background: white;
+  background: transparent;
+  width: 100%;
+  height: 100%;
 }
+
+.nav:hover+.body {
+  display: flex;
+  opacity: 0.5;
+  background: rgba(0, 0, 0, 0.1);
+  transition: opacity 0.5s linear;
+}
+
+.underline:hover {
+  border-bottom: 3px solid #D21F30;
+}
+
+
 
 /* Styling for the different types departments on the nav bar */
 .words {
-  text-transform: uppercase;
   visibility: visible;
   padding-top: 15px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 12px;
+  font-family: 'Calibri', sans-serif;
+  font-size: 14px;
   font-weight: bold;
   letter-spacing: 2px;
   padding: 20px;
+  text-transform: uppercase;
+  visibility: visible;
 }
 
 .nav-container {
@@ -43,6 +83,8 @@
   align-items: center;
   padding: 12px;
   padding-bottom: 20px;
+  font-weight: 500;
+  transition: opacity .5s ease;
 }
 
 #logo {
@@ -64,16 +106,22 @@
   padding-right: 10px;
 }
 
-
 .word {
   text-transform: uppercase;
   visibility: visible;
   padding-top: 15px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 12px;
+  font-family: 'Calibri', sans-serif;
+  font-size: 14px;
   font-weight: bold;
   letter-spacing: 2px;
   padding: 20px;
+}
+
+.underline-target {
+  width: 31.0312px;
+  height: 25px;
+  left: 104.297px;
+  transform: none;
 }
 
 /* Styling for the sign in and search aspect */
@@ -84,7 +132,7 @@
 .search-bar {
   width: 107px;
   height: 35px;
-  font-size: 13px;
+  font-size: 14px;
   padding-left: 24px;
 }
 
@@ -105,41 +153,110 @@ img {
 }
 
 /* styling for the activities */
+.dropdown-content {
+  width: 100%;
+  height: 70px;
+}
+
+.act-container {
+  width: 100%;
+  background-color: white;
+}
+
 .activity {
   background-color: white;
-  height: 70px;
-  padding-top: 10px;
+  width: 100%;
 }
 
 .activity-title {
+  display: inline-flex;
   text-transform: uppercase;
   visibility: visible;
-  padding-top: 15px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 13px;
+  font-family: 'Helvetica';
+  font-size: 14px;
   font-weight: 600;
   letter-spacing: 2px;
   padding-left: 90px;
   padding-right: 120px;
+  vertical-align: middle;
 }
 
 .activity-border {
   border-left: 1px solid lightgray;
-  padding: 20px;
-  height: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 .activity-types {
+  display: inline-flex;
   visibility: visible;
-  padding-top: 15px;
-  font-family: Helvetica, sans-serif;
-  font-size: 14px;
-  font-weight: 545;
-  font-weight: bold;
-  padding: 50px;
-  padding-left: 40px;
+  padding-top: 30px;
+  font-family: 'Calibri';
+  font-size: 16px;
+  font-weight: 600;
+  padding-right: 30px;
+  padding-left: 70px;
 }
 
 .act-under:hover {
   border-bottom: 3px solid #D21F30;
+}
+
+/* Styling for collections */
+.entire-collection {
+  width: 100%;
+  height: 330px;
+  background-color: #fafafa;
+  font-family: "Calibri";
+  padding-top: 20px;
+}
+
+.item-collection {
+  display: flex;
+  float: left;
+  padding-right: 75px;
+}
+
+.all-items {
+  display: inline-flex;
+}
+
+.items {
+  list-style-type: none;
+  padding-top: 5px;
+  padding-right: 15git px;
+  padding-left: 85px;
+}
+
+.list {
+  padding-bottom: 10px;
+  display: flex;
+}
+
+.item {
+  text-transform: none;
+  /* padding-right: 10px; */
+  padding-bottom: 10px;
+  display: flex;
+  font-family: 'Helvetica';
+  font-size: 14px;
+}
+
+.category-border {
+  border-left: 1px solid lightgray;
+  padding-bottom: 250px;
+}
+
+h4 {
+  letter-spacing: 2px;
+  /* padding-right: 70px; */
+  padding-left: 20px;
+  /* text-align: left; */
+}
+
+.clothing-types {
+  float: left;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
 }

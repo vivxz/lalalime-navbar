@@ -6,15 +6,18 @@ class Search extends React.Component {
 	constructor(props) {
 		super(props);
 
-		this.state = {};
+		this.state = {
+		};
 	}
+
+
 
 	render() {
 		return (
 			<div className="nav">
 				<Department />
 				<Activities />
-			</div>
+			</ div>
 		)
 	}
 }

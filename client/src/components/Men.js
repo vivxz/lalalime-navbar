@@ -5,11 +5,11 @@ const Men = (props) => {
     <div className="activity">
       <span className="activity-title">activities</span>
       <span className="activity-border"> </span>
-      <span class="activity-types"><span class="act-under">Training</span></span>
-      <span class="activity-types"><span class="act-under">Running</span></span>
-      <span class="activity-types"><span class="act-under">Yoga</span></span>
-      <span class="activity-types"><span class="act-under">Office Travel Commute</span></span>
-      <span class="activity-types"><span class="act-under">Golf</span></span>
+      <span className="activity-types"><span className="act-under">Training</span></span>
+      <span className="activity-types"><span className="act-under">Running</span></span>
+      <span className="activity-types"><span className="act-under">Yoga</span></span>
+      <span className="activity-types"><span className="act-under">Office Travel Commute</span></span>
+      <span className="activity-types"><span className="act-under">Golf</span></span>
     </div>
   )
 }

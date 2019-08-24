@@ -25,7 +25,7 @@ class App extends React.Component {
     return (
       <div>
         <Search />
-        <div className="body"> </div>
+        <div className="body" />
       </div>
     )
   }
