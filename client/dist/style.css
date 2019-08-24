@@ -140,17 +140,19 @@
   position: relative;
 }
 
-.search-wrapper img {
+.search-wrapper .mag {
   position: absolute;
   top: -3px;
   left: 2px;
 }
 
-img {
+.mag {
   width: 23px;
   height: 22px;
   cursor: pointer;
 }
+
+.bag {}
 
 /* styling for the activities */
 .dropdown-content {
@@ -205,53 +207,104 @@ img {
 /* Styling for collections */
 .entire-collection {
   width: 100%;
-  height: 330px;
+  height: 350px;
   background-color: #fafafa;
   font-family: "Calibri";
-  padding-top: 20px;
+  padding-top: 10px;
+}
+
+.entire-collection-girl {
+  width: 100%;
+  height: 260px;
+  background-color: #fafafa;
+  font-family: "Calibri";
+  padding-top: 10px;
+}
+
+.entire-collection-comm {
+  width: 100%;
+  height: 260px;
+  background-color: #fafafa;
+  font-family: "Calibri";
+  padding-top: 10px;
+  padding-left: 100px
 }
 
 .item-collection {
   display: flex;
   float: left;
-  padding-right: 75px;
+  padding-right: 70px;
+  padding-left: 70px;
+}
+
+.item-collection-men {
+  display: flex;
+  float: left;
+  padding-right: 30px;
+  padding-left: 70px;
+}
+
+.item-collection-girl {
+  display: flex;
+  float: left;
+  padding-right: 40px;
+  padding-left: 70px;
 }
 
 .all-items {
   display: inline-flex;
+  padding-left: 15px;
 }
 
 .items {
   list-style-type: none;
   padding-top: 5px;
-  padding-right: 15git px;
-  padding-left: 85px;
+  padding-right: 15px;
+  padding-left: 20px
 }
 
 .list {
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   display: flex;
+}
+
+.comm {
+  padding-left: 0;
 }
 
 .item {
   text-transform: none;
-  /* padding-right: 10px; */
-  padding-bottom: 10px;
+  padding-bottom: 18px;
   display: flex;
   font-family: 'Helvetica';
   font-size: 14px;
 }
 
+
 .category-border {
   border-left: 1px solid lightgray;
-  padding-bottom: 250px;
+  padding-bottom: 300px;
 }
 
-h4 {
+.category-border-girl {
+  border-left: 1px solid lightgray;
+  padding-bottom: 200px;
+}
+
+.cloth {
   letter-spacing: 2px;
-  /* padding-right: 70px; */
-  padding-left: 20px;
-  /* text-align: left; */
+  padding-right: 100px;
+  padding-left: 0;
+}
+
+.clothes {
+  letter-spacing: 2px;
+  padding-right: 100px;
+  padding-left: 12px;
+}
+
+.space {
+  padding-bottom: 15px;
 }
 
 .clothing-types {
@@ -259,4 +312,12 @@ h4 {
   text-transform: uppercase;
   text-align: center;
   font-size: 14px;
+}
+
+.comm-types {
+  float: left;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+  padding-right: 60px;
 }

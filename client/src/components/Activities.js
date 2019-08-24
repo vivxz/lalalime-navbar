@@ -2,6 +2,7 @@ import React from 'react';
 import Women from './Women.js';
 import Men from './Men.js';
 import Girls from './Girls.js';
+import Community from './Community.js';
 
 class Activities extends React.Component {
   constructor(props) {
@@ -14,9 +15,10 @@ class Activities extends React.Component {
     return (
       <div className="act-container">
         {/* CONDITIONAL RENDERING HERE */}
-        <Women />
-        {/* <Men />
-        <Girls /> */}
+        {/* <Women /> */}
+        {/* <Men /> */}
+        {/* <Girls /> */}
+        <Community />
       </div>
     )
   }
