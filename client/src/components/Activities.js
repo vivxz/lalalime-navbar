@@ -15,10 +15,10 @@ class Activities extends React.Component {
     return (
       <div className="act-container">
         {/* CONDITIONAL RENDERING HERE */}
-        {/* <Women /> */}
+        <Women />
         {/* <Men /> */}
         {/* <Girls /> */}
-        <Community />
+        {/* <Community /> */}
       </div>
     )
   }
