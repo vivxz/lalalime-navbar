@@ -1,0 +1,249 @@
+/* latin */
+@font-face {
+  font-family: 'Calibri';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Calibri Italic'), local('Calibri-Italic'), url(https://fonts.gstatic.com/l/font?kit=J7adnpV-BGlaFfdAhLQo6btPMDoTpA&skey=36a3d5758e0e2f58&v=v10) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Calibri';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Calibri Bold Italic'), local('Calibri-BoldItalic'), url(https://fonts.gstatic.com/l/font?kit=J7aYnpV-BGlaFfdAhLQgUp5aHRgejiMIKQ&skey=8b00183e5f6700b6&v=v10) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Calibri';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Calibri'), url(https://fonts.gstatic.com/l/font?kit=J7afnpV-BGlaFfdAhLEY67FIEjg&skey=a1029226f80653a8&v=v10) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Calibri';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Calibri Bold'), local('Calibri-Bold'), url(https://fonts.gstatic.com/l/font?kit=J7aanpV-BGlaFfdAjAo9_pxqHxIZrCE&skey=cd2dd6afe6bf0eb2&v=v10) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+.wrapper {
+  position: fixed;
+  width: 100%;
+  background-color: #fafafa;
+  z-index: 1;
+  top: 70px;
+  left: 0;
+  height: auto;
+}
+
+.activities-ul {
+  display: inline-flex;
+  list-style-type: none;
+  font-family: 'Calibri';
+  font-size: 16px;
+  font-weight: 600;
+  padding-right: 70px;
+  padding-left: 60px;
+  cursor: pointer;
+  width: 100%;
+  /* width: 100%;
+  overflow: hidden; */
+}
+
+.activities-li {
+  padding-right: 90px;
+  cursor: pointer;
+}
+
+.subheaders-ul {
+  list-style-type: none;
+}
+
+.subheader-ul {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  font-weight: 300;
+  list-style-type: none;
+  font-size: 11pt;
+  font-weight: 300;
+  margin: 30px 0;
+}
+
+.subheader-li {
+  padding: 10px 25px;
+  cursor: pointer;
+}
+
+.miscellaneous-ul {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #d5d5d5;
+  width: 180px;
+  font-weight: 300;
+  list-style-type: none;
+  font-size: 11pt;
+  font-weight: 300;
+  margin: 30px 0;
+  margin-left: 50px;
+  float: left;
+  padding-right: 23px;
+  padding-left: 90px;
+}
+
+.miscellaneous-li {
+  padding-bottom: 20px;
+  display: flex;
+  cursor: pointer;
+}
+
+.activities-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 80px;
+  align-items: center;
+  background-color: white;
+  height: 70px;
+}
+
+.activities-title {
+  width: 110px;
+  padding: 10px 40px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding-left: 55px;
+  padding-right: 120px;
+  border-right: 1px solid #d5d5d5;
+  margin: 8px 0;
+  transform: scale(1, 0.9);
+}
+
+.nav {
+  display: flex;
+  width: 54%;
+  justify-content: space-around;
+  align-items: flex-start;
+  list-style-type: none;
+  max-height: 70px;
+  font-family: 'Calibri';
+  font-weight: 600;
+  font-size: 10.5pt;
+  padding: 25px;
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+}
+
+.nav-items {
+  display: block;
+  transform: scale(1, 1.02);
+  padding-top: 8px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.container {
+  padding-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fafafa;
+  z-index: 2;
+}
+
+.account {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -8px;
+  margin-right: 30px;
+  padding-top: 20px;
+}
+
+.button1 {
+  border: none;
+  width: 85px;
+  height: 24px;
+  margin: 3px 0;
+  margin-right: 10px;
+  border-right: 1px solid #d5d5d5;
+  font-family: 'Calibri';
+  font-weight: 600;
+  font-size: 11pt;
+  background-color: #fafafa;
+  padding: 0;
+  padding-right: 15px;
+}
+
+.search-bar {
+  width: 100px;
+  height: 35px;
+  position: relative;
+  bottom: 5px;
+  font-size: 14px;
+  padding-left: 24px;
+}
+
+.search-wrapper {
+  position: relative;
+  padding-left: 20px;
+}
+
+.search-wrapper .mag {
+  position: absolute;
+  top: 5px;
+  left: 23px;
+}
+
+.mag {
+  width: 23px;
+  height: 22px;
+  cursor: pointer;
+}
+
+.button3 {
+  border: none;
+  width: 30px;
+  height: 30px;
+  background-color: #fafafa;
+  padding: 0;
+  margin: 0 10px;
+  transform: scale(1, 1.1);
+  margin-top: -3px;
+}
+
+.border {
+  color: #d22030;
+  height: 4px;
+  width: inherit;
+  background-color: #d22030;
+  transition: 0.5s;
+}
+
+.subheader-li:hover {
+  /* border-bottom: 3px solid #d22030; */
+  text-decoration: underline #d22030;
+}
+
+.activities-li:hover {
+  border-bottom: 3px solid #d22030;
+  /* text-decoration: underline #d22030; */
+}
+
+.miscellaneous-li:hover {
+  border-bottom: 3px solid #d22030;
+  /* text-decoration: underline #d22030; */
+}

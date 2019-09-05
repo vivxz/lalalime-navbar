@@ -1,13 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Yoga clothes + running gear | lululemon athletica</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="./styles.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <style>
+    .slide-enter {
+      left: -99px;
+    }
+
+    .slide-enter.slide-enter-active {
+      left: inherit;
+      transition: left 500ms ease-in;
+    }
+
+    .slide-leave {
+      left: inherit;
+    }
+
+    .slide-leave.slide-leave-active {
+      left: -99px;
+      transition: left 300ms ease-in;
+    }
+  </style>
 </head>
 
 <body>
