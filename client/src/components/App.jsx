@@ -53,7 +53,7 @@ class App extends React.Component {
             </svg>
           </li>
           {this.props.menuItems.map((item, index) => (
-            <div key={item.title}>
+            <div key={index}>
               <li className="nav-item" onMouseOver={this.handleMouseOver}>{item.title}</li>
               {this.state[item.title.toLowerCase()] &&
                 <div>

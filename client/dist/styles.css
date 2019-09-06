@@ -141,10 +141,9 @@
   position: relative;
 }
 
-.nav-items {
+.nav-item {
   display: block;
   transform: scale(1, 1.02);
-  padding-top: 8px;
   letter-spacing: 1px;
   cursor: pointer;
 }
@@ -276,6 +275,7 @@
   width: 85px;
   height: 102px;
   display: block;
+  padding-bottom: 30px;
 }
 
 .suggest-title {
@@ -305,11 +305,11 @@
 
 .sugg-title {
   position: relative;
-  bottom: 390px;
+  bottom: 525px;
   left: 100px;
   font-family: 'Calibri';
   flex-direction: column;
-  padding-bottom: 85px;
+  padding-bottom: 120px;
   padding-left: .625rem;
   text-align: left;
   font-weight: normal;
