@@ -1,18 +1,20 @@
 const Clothing = require('./index.js');
 
-const name = ['Speed Up', 'All The Right Places', 'Fast and Free', 'Align', 'Train Times', 'Wunder Under', 'Mist Over', 'Swiftly', 'Love', 'Define', 'Cool']
-const color = ['True Navy', 'Black', 'Rustic Coral', 'Chambray', 'White', 'Dark Olive']
+const name = ['Speed Up', 'All The Right Places', 'Fast and Free', 'Align', 'Train Times', 'Wunder Under', 'Mist Over', 'Swiftly', 'Love', 'Define', 'Cool'];
+const color = ['True Navy', 'Black', 'Rustic Coral', 'Chambray', 'White', 'Dark Olive'];
+
+const pantsImages = ['./images/pan1.png', './images/pan2.png', './images/pan3.png', './images/pan4.png'];
+const shirtsImages = ['./images/shi1.png', './images/shi2.png', './images/shi3.png', './images/shi4.png'];
+const yellowImages = ['./images/yel1.png', './images/yel2.png', './images/yel3.png', './images/yel4.png'];
 
 const bottoms = {
   types: ['Pant', 'Crop', 'Jogger', 'Tight', 'Bootcut'],
-  len: ['21"', '22"', '23"', '24"', '25"', '26"', '27"', '28"', '29"', '30"', '31"'],
-  images: []
+  len: ['21"', '22"', '23"', '24"', '25"', '26"', '27"', '28"', '29"', '30"', '31"']
 }
 
 const tops = {
   types: ['Racerback', 'Tank'],
-  len: ['', 'II'],
-  images: []
+  len: ['', 'II']
 }
 
 const createProductPants = () => {
@@ -39,14 +41,29 @@ const createProducts = () => {
     productsArr.push(createProductPants());
     productsArr.push(createProductTops());
   }
-  return productsArr
-}
+  for (var i = 0; i < productsArr.length; i++) {
+    if (productsArr[i].name.includes('Pant')) {
+      let index = Math.floor(Math.random() * Math.floor(pantsImages.length));
+      productsArr[i].images = pantsImages[index];
+    }
+    else if (productsArr[i].name.includes('Tank')) {
+      let index = Math.floor(Math.random() * Math.floor(shirtsImages.length));
+      productsArr[i].images = shirtsImages[index];
+    } else {
+      let index = Math.floor(Math.random() * Math.floor(yellowImages.length));
+      productsArr[i].images = yellowImages[index];
+
+    }
+  }
+  console.log(productsArr);
+  return productsArr;
+};
 
 const insertMockData = function () {
   var results = createProducts();
   for (var i = 0; i < results.length; i++) {
-    let { name, color, type } = results[i];
-    Clothing.insertMany({ name, color, type });
+    let { name, color, type, images } = results[i];
+    Clothing.insertMany({ name, color, type, images });
   }
 };
 

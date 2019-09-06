@@ -9,7 +9,8 @@ db.once('open', () => console.log('CONNECTED'));
 var clothingSchema = new mongoose.Schema({
   name: String,
   color: String,
-  type: String
+  type: String,
+  images: String
 })
 
 var Clothings = mongoose.model('Clothings', clothingSchema);
