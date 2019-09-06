@@ -275,6 +275,7 @@
 .sugg-img {
   width: 85px;
   height: 102px;
+  display: block;
 }
 
 .suggest-title {
@@ -303,10 +304,12 @@
 }
 
 .sugg-title {
-  float: right;
+  position: relative;
+  bottom: 390px;
+  left: 100px;
   font-family: 'Calibri';
   flex-direction: column;
-  padding: .3125rem;
+  padding-bottom: 85px;
   padding-left: .625rem;
   text-align: left;
   font-weight: normal;

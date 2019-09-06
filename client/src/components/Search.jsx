@@ -13,21 +13,19 @@ class Search extends React.Component {
     super(props);
     this.state = {
       query: '',
-      moused: false,
       searchClicked: false,
       results: [],
       suggestedOptions: []
     }
-    this.setWrapperRef = this.setWrapperRef.bind(this);
+    this.setWrapperRef = this.setWrapperRef.bind(this)
     this.handleClickOutside = this.handleClickOutside.bind(this);
     this.handleClickInside = this.handleClickInside.bind(this);
     this.handleChange = this.handleChange.bind(this);
-    this.suggestionChange = this.suggestionChange.bind(this);
+    this.suggestChange = this.suggestChange.bind(this);
     this.getAll = this.getAll.bind(this);
   }
   componentDidMount() {
     document.addEventListener('mousedown', this.handleClickOutside);
-    // this.getAll();
   }
 
   componentWillUnmount() {
@@ -49,41 +47,56 @@ class Search extends React.Component {
   }
 
   handleChange(event) {
-    this.setState({ query: event.target.value }, () => this.suggestionChange());
+    this.setState({ query: event.target.value }, () => {
+      if (this.state.query.length >= 3) {
+        this.suggestChange();
+        this.getAll();
+      } else {
+        this.suggestChange();
+      }
+    });
   }
 
   getAll() {
     axios
       .get('/search')
-      .then((response) => this.setState({ results: response.data })
-        // let array = []
-        // for (var i = 0; i < response.data.length; i++) {
-        //   if (response.data[i].name.includes(this.state.query) || response.data[i].color.includes(this.state.query)) {
-        //     array.push(response.data[i])
-        //     // console.log(array);
-        //   }
+      .then((response) => {
+        let array = []
+        for (var i = 0; i < response.data.length; i++) {
+          if (response.data[i].name.toLowerCase().includes(this.state.query) || response.data[i].color.toLowerCase().includes(this.state.query)) {
+            array.push(response.data[i])
+          }
+        }
+        // if (array.length !== 0) {
+        //   array = Object.values(array.reduce((accumulator, current) => {
+        //     if (!accumulator[current.image]) {
+        //       accumulator[current.image] = current;
+        //     }
+        //     return accumulator;
+        //   }, {})
+        //   );
+        array = array.slice(2, 6);
+        this.setState({ results: array })
         // }
-        // array = array.slice(0, 4);
-        // this.setState({ results: array }, () => console.log(array))
-      )
+      })
       .catch((err) => console.log(err))
   }
 
-  suggestionChange() {
-    let arr = [];
+  suggestChange() {
+    let array = [];
     for (var i = 0; i < suggestions.length; i++) {
       if (!suggestions[i].includes(' ')) {
         if (suggestions[i].slice(0, this.state.query.length) === this.state.query) {
-          arr.push(suggestions[i])
+          array.push(suggestions[i])
         }
       } else {
         if (suggestions[i].includes(this.state.query)) {
-          arr.push(suggestions[i])
+          array.push(suggestions[i])
         }
       }
     }
-    arr = arr.slice(0)
-    this.setState({ suggestedOptions: arr }, () => console.log(this.state.query))
+    array = array.slice(0)
+    this.setState({ suggestedOptions: array })
   }
 
   render() {
@@ -96,7 +109,7 @@ class Search extends React.Component {
               <img className="mag" src="./images/mag.png"></img>
             </div>
           </form>
-          <SearchResults searchClicked={this.state.searchClicked} query={this.state.query} results={this.state.results} suggestedOptions={this.state.suggestedOptions} />
+          {this.state.query.length > 2 ? <SearchResults searchClicked={this.state.searchClicked} query={this.state.query} results={this.state.results} suggestedOptions={this.state.suggestedOptions} /> : null}
         </span>
       </span>
     )
