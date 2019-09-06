@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import DropdownContent from './Dropdown.jsx';
+import Search from './Search.jsx';
 
 class App extends React.Component {
   constructor(props) {
@@ -12,23 +13,22 @@ class App extends React.Component {
       girls: false,
       community: false,
       selfcare: false,
-      query: ''
     };
-    this.getAll = this.getAll.bind(this);
+    // this.getAll = this.getAll.bind(this);
     this.handleMouseOver = this.handleMouseOver.bind(this);
     this.handleMouseLeave = this.handleMouseLeave.bind(this);
   }
 
   componentDidMount() {
-    this.getAll();
+    // this.getAll();
   }
 
-  getAll() {
-    axios
-      .get('/search')
-      .then((response) => console.log(response))
-      .catch((err) => console.log(err))
-  }
+  // getAll() {
+  //   axios
+  //     .get('/search')
+  //     .then((response) => console.log(response.data))
+  //     .catch((err) => console.log(err))
+  // }
 
   handleMouseOver(event) {
     const target = event.target.innerHTML.toLowerCase()
@@ -67,18 +67,9 @@ class App extends React.Component {
         <div className="account">
           <button className="button1">SIGN IN</button>
           <span className="search-wrapper">
-            <input className="search-bar" type="text" placeholder="Search" />
-            <img className="mag" src="./images/mag.png"></img>
-
-            {/* <div id="id01" class="w3-modal">
-              <div class="w3-modal-content">
-                <div class="w3-container">
-                  <p>Some text..</p>
-                  <p>Some text..</p>
-                </div>
-              </div>
-            </div> */}
-
+            <Search />
+          </span>
+          <span>
             <button className="button3"><img src="./images/bag.png" width="25px" height="25px" position="relative" top="17px" /></button>
           </span>
         </div >
