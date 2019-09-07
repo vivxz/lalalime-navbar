@@ -1,7 +1,7 @@
 import React from 'react';
-import axios from 'axios';
 import DropdownContent from './Dropdown.jsx';
 import Search from './Search.jsx';
+import '../../dist/styles.css';
 
 class App extends React.Component {
   constructor(props) {
@@ -14,21 +14,9 @@ class App extends React.Component {
       community: false,
       selfcare: false,
     };
-    // this.getAll = this.getAll.bind(this);
     this.handleMouseOver = this.handleMouseOver.bind(this);
     this.handleMouseLeave = this.handleMouseLeave.bind(this);
   }
-
-  componentDidMount() {
-    // this.getAll();
-  }
-
-  // getAll() {
-  //   axios
-  //     .get('/search')
-  //     .then((response) => console.log(response.data))
-  //     .catch((err) => console.log(err))
-  // }
 
   handleMouseOver(event) {
     const target = event.target.innerHTML.toLowerCase()
