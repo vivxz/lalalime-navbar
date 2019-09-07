@@ -148,7 +148,17 @@
   cursor: pointer;
 }
 
-.container {
+.drop-fullscreen {
+  position: fixed;
+  bottom: 0;
+  top: 70px;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+
+.nav-container {
   padding-top: 8px;
   display: flex;
   justify-content: space-between;
@@ -159,7 +169,7 @@
   left: 0;
   width: 100%;
   background-color: #fafafa;
-  z-index: 2;
+  z-index: 20;
 }
 
 .account {
@@ -183,6 +193,7 @@
   background-color: #fafafa;
   padding: 0;
   padding-right: 15px;
+  cursor: pointer;
 }
 
 .search-bar {
@@ -211,6 +222,12 @@
   height: 22px;
   cursor: pointer;
   z-index: 10000;
+}
+
+.bag {
+  cursor: pointer;
+  position: relative;
+  top: 2px;
 }
 
 .button3 {

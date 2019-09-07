@@ -14,7 +14,7 @@ class SearchResults extends React.Component {
       return null;
     }
 
-    // console.log(this.props.results);
+    console.log(results);
 
     if (searchClicked && query.length >= 3) {
       return (

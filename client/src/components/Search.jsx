@@ -59,7 +59,7 @@ class Search extends React.Component {
 
   getAll() {
     axios
-      .get('/search')
+      .get('/api/search')
       .then((response) => {
         let array = []
         for (var i = 0; i < response.data.length; i++) {

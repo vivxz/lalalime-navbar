@@ -9,10 +9,12 @@ class DropdownContent extends React.Component {
   }
   render() {
     return (
-      <div className="wrapper" onMouseLeave={this.props.handleMouseLeave}>
-        {this.props.dropdownItems.categories && <Activities listItems={this.props.dropdownItems.categories} />}
-        {this.props.dropdownItems.misc && <Miscellaneous listItems={this.props.dropdownItems.misc} />}
-        <Subheaders subHeaders={this.props.dropdownItems.subHeaders} />
+      <div className="drop-fullscreen">
+        <div className="wrapper" onMouseLeave={this.props.handleMouseLeave}>
+          {this.props.dropdownItems.categories && <Activities listItems={this.props.dropdownItems.categories} />}
+          {this.props.dropdownItems.misc && <Miscellaneous listItems={this.props.dropdownItems.misc} />}
+          <Subheaders subHeaders={this.props.dropdownItems.subHeaders} />
+        </div>
       </div>
     )
   }

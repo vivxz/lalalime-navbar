@@ -33,7 +33,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="nav-container">
         <ul className="nav">
           <li className="nav-item">
             <svg style={{ fill: '#d22030', position: 'relative', bottom: '10px', right: '20px' }} width='34px' height='34px' viewBox='0 0 35 35'>
@@ -58,7 +58,7 @@ class App extends React.Component {
             <Search />
           </span>
           <span>
-            <button className="button3"><img src="./images/bag.png" width="25px" height="25px" position="relative" top="17px" /></button>
+            <button className="button3"><img className="bag" src="./images/bag.png" width="25px" height="25px" position="relative" top="17px" /></button>
           </span>
         </div >
       </div >
