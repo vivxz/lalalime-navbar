@@ -34,7 +34,7 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-.wrapper {
+.nav-wrapper {
   position: fixed;
   width: 100%;
   background-color: #fafafa;
@@ -260,15 +260,15 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.2);
   z-index: 9999;
 }
 
 .search-box {
   width: 400px;
-  margin-left: 555px;
   display: flex;
   margin-top: 100px;
+  margin-left: 550px;
   background: #fdfdf9;
   border: 1px solid #ccc;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);

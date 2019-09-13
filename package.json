@@ -9,8 +9,8 @@
     "node": ">=6.13.0"
   },
   "scripts": {
-    "build": "webpack -w -d",
-    "start": "nodemon server/index.js",
+    "build": "webpack -w -p",
+    "start": "node server/index.js",
     "seed": "node database/seed.js"
   },
   "dependencies": {
@@ -24,15 +24,16 @@
     "path": "^0.12.7",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "style-loader": "^1.0.0"
+    "style-loader": "^1.0.0",
+    "uglifyjs-webpack-plugin": "^2.2.0"
   },
   "devDependencies": {
-    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
     "@babel/core": "^7.3.4",
     "@babel/preset-env": "^7.3.4",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.5",
-    "webpack": "^4.29.6",
+    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
+    "webpack": "^4.40.0",
     "webpack-cli": "^3.3.0"
   }
 }

@@ -1,10 +1,5 @@
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/search', { useNewUrlParser: true });
-
-
-var db = mongoose.connection;
-db.on('error', console.error.bind(console, 'connection error:'));
-db.once('open', () => console.log('CONNECTED'));
+const db = mongoose.connect('mongodb+srv://vivxz:abcd1234@cluster0-bk7sm.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true });
 
 var clothingSchema = new mongoose.Schema({
   name: String,
