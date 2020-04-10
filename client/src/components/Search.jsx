@@ -106,7 +106,7 @@ class Search extends React.Component {
           <form >
             <div className="search-wrapper">
               <input tabIndex="1" value={this.state.query} ref={this.setWrapperRef} onChange={this.handleChange} onClick={this.handleClickInside} type="text" placeholder="Search" className="search-bar" ></input>
-              <img className="mag" src="./images/mag.png"></img>
+              <img className="mag" src="https://fec-nav.s3-us-west-1.amazonaws.com/mag.png"></img>
             </div>
           </form>
           {this.state.query.length > 2 ? <SearchResults searchClicked={this.state.searchClicked} query={this.state.query} results={this.state.results} suggestedOptions={this.state.suggestedOptions} /> : null}

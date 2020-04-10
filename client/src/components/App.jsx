@@ -58,7 +58,7 @@ class App extends React.Component {
             <Search />
           </span>
           <span>
-            <button className="button3"><img className="bag" src="./images/bag.png" width="25px" height="25px" position="relative" top="17px" /></button>
+            <button className="button3"><img className="bag" src="https://fec-nav.s3-us-west-1.amazonaws.com/bag.png" width="25px" height="25px" position="relative" top="17px" /></button>
           </span>
         </div >
       </div >

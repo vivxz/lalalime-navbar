@@ -3,9 +3,9 @@ const Clothing = require('./index.js');
 const name = ['Speed Up', 'All The Right Places', 'Fast and Free', 'Align', 'Train Times', 'Wunder Under', 'Mist Over', 'Swiftly', 'Love', 'Define', 'Cool'];
 const color = ['True Navy', 'Black', 'Rustic Coral', 'Chambray', 'White', 'Dark Olive', 'Yellow'];
 
-const pantsImages = ['./images/pan1.png', './images/pan2.png', './images/pan3.png', './images/pan4.png', './images/pan5.png', './images/pan6.png'];
-const shirtsImages = ['./images/shi1.png', './images/shi2.png', './images/shi3.png', './images/shi4.png', './images/shi5.png', './images/shi6.png'];
-const yellowImages = ['./images/yel1.png', './images/yel2.png', './images/yel3.png', './images/yel4.png', './images/yel5.png', './images/yel6.png'];
+const pantsImages = ['https://fec-nav.s3-us-west-1.amazonaws.com/pan1.png', 'https://fec-nav.s3-us-west-1.amazonaws.com/pan2.png', 'https://fec-nav.s3-us-west-1.amazonaws.com/pan3.png', 'https://fec-nav.s3-us-west-1.amazonaws.com/pan4.png', 'https://fec-nav.s3-us-west-1.amazonaws.com/pan5.png', 'https://fec-nav.s3-us-west-1.amazonaws.com/pan6.png', 'https://fec-nav.s3-us-west-1.amazonaws.com/pan7.png', 'https://fec-nav.s3-us-west-1.amazonaws.com/pan8.png', 'https://fec-nav.s3-us-west-1.amazonaws.com/pan9.png'];
+const shirtsImages = ['https://fec-nav.s3-us-west-1.amazonaws.com/shi1.png', 'https://fec-nav.s3-us-west-1.amazonaws.com/shi2.png', 'https://fec-nav.s3-us-west-1.amazonaws.com/shi3.png', 'https://fec-nav.s3-us-west-1.amazonaws.com/shi4.png', 'https://fec-nav.s3-us-west-1.amazonaws.com/shi5.png', 'https://fec-nav.s3-us-west-1.amazonaws.com/shi6.png', 'https://fec-nav.s3-us-west-1.amazonaws.com/shi7.png', 'https://fec-nav.s3-us-west-1.amazonaws.com/shi8.png', 'https://fec-nav.s3-us-west-1.amazonaws.com/shi9.png'];
+const yellowImages = ['https://fec-nav.s3-us-west-1.amazonaws.com/yel1.png', 'https://fec-nav.s3-us-west-1.amazonaws.com/yel2.png', 'https://fec-nav.s3-us-west-1.amazonaws.com/yel3.png', 'https://fec-nav.s3-us-west-1.amazonaws.com/yel4.png', 'https://fec-nav.s3-us-west-1.amazonaws.com/yel5.png', 'https://fec-nav.s3-us-west-1.amazonaws.com/yel6.png', 'https://fec-nav.s3-us-west-1.amazonaws.com/yel7.png', 'https://fec-nav.s3-us-west-1.amazonaws.com/yel8.png', 'https://fec-nav.s3-us-west-1.amazonaws.com/yel9.png', 'https://fec-nav.s3-us-west-1.amazonaws.com/yel10.png', 'https://fec-nav.s3-us-west-1.amazonaws.com/yel11.png'];
 
 const bottoms = {
   types: ['Pant', 'Crop', 'Jogger', 'Tight', 'Bootcut'],
