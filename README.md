@@ -30,7 +30,7 @@ open browser using http://localhost:3001/
 Node 6.13.0
 
 ## Demo
-[![LalaLime NavBar Demo](./demogif)]
+![LalaLime NavBar Demo](https://fec-nav.s3-us-west-1.amazonaws.com/Demo.gif)
 
 ## Development
 * [react.js](https://www.npmjs.com/package/react) - The official React.js website
