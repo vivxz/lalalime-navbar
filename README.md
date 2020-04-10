@@ -1,6 +1,6 @@
-# Project Name
+# LalaLime - Navbar 
 
-> Project description
+> A front-end microservice that mimics the aesthetics and functionality of LuluLemon's navigation bar.
 
 ## Related Projects
 
@@ -11,29 +11,28 @@
 
 ## Table of Contents
 
-1. [Usage](#Usage)
+1. [Setup](#Setup)
 1. [Requirements](#requirements)
+1. [Demo](#Demo)
 1. [Development](#development)
 
 ## Usage
-
 > Some usage instructions
+
+In the terminal,
+run npm install to install all dependencies
+run npm run start to run the server  
+run npm run seed to seed the database  
+open browser using http://localhost:3001/  
 
 ## Requirements
 
-An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
+Node 6.13.0
 
-- Node 6.13.0
-- etc
+## Demo
+[![LalaLime NavBar Demo](https://fec-nav.s3-us-west-1.amazonaws.com/demo.gif)]
 
 ## Development
-
-### Installing Dependencies
-
-From within the root directory:
-
-```sh
-npm install -g webpack
-npm install
-```
-
+* [react.js](https://www.npmjs.com/package/react) - The official React.js website
+* [express.js](https://www.npmjs.com/package/express) - The official Express.js website
+* [webpack 4](https://www.npmjs.com/package/webpack) - The official Webpack website
