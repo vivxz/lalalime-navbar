@@ -16,13 +16,13 @@
 1. [Demo](#Demo)
 1. [Development](#development)
 
-## Usage
-> Some usage instructions
+## Setup
+To run this project, install it locally using yarn and expo:
 
-In the terminal,
-run npm install to install all dependencies
-run npm run start to run the server  
-run npm run seed to seed the database  
+    $ npm install
+    $ npm run seed
+    $ npm run start
+
 open browser using http://localhost:3001/  
 
 ## Requirements
@@ -30,7 +30,7 @@ open browser using http://localhost:3001/
 Node 6.13.0
 
 ## Demo
-[![LalaLime NavBar Demo](https://fec-nav.s3-us-west-1.amazonaws.com/demo.gif)]
+[![LalaLime NavBar Demo](./demogif)]
 
 ## Development
 * [react.js](https://www.npmjs.com/package/react) - The official React.js website
