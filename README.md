@@ -17,7 +17,7 @@
 1. [Development](#development)
 
 ## Setup
-To run this project, install it locally using yarn and expo:
+To run this project, install it locally using npm:
 
     $ npm install
     $ npm run seed
