@@ -30,7 +30,7 @@ open browser using http://localhost:3001/
 Node 6.13.0
 
 ## Demo
-![demo](https://vivs-portfolio.s3-us-west-1.amazonaws.com/lalalime.gif)
+![demo](./lalalime.gif)
 
 ## Development
 * [react.js](https://www.npmjs.com/package/react) - The official React.js website
