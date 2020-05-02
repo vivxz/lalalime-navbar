@@ -4,7 +4,7 @@ const headerItems = [
     subHeaders: [
       {
         title: 'TOPS',
-        related: ['Tank Tops', 'Dresses', 'Short Sleeve Shirts', 'Long Sleeve Shirts', 'Sweaters', 'Sweaters', 'Hoodies + Sweatshirts', 'Jackets + Coats', 'Swimsuits']
+        related: ['Tank Tops', 'Dresses', 'Short Sleeve Shirts', 'Long Sleeve Shirts', 'Sweaters', 'Hoodies + Sweatshirts', 'Jackets + Coats', 'Swimsuits']
       },
       {
         title: 'BOTTOMS',
